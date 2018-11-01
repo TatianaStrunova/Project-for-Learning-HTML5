@@ -1,0 +1,467 @@
+body {
+    margin: 0 auto;
+    font-family: Arial;
+    width: 1366px;
+}
+/*Header-Product name*/
+
+.header {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #445162;
+    color: #ffffff;
+    position: relative;
+}
+
+.header-h {
+    font-size: 60px;
+}
+
+.header__list-item {
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    line-height: 36px;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    width: 422px;
+}
+
+.header__list-item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -47px;
+    width: 25px;
+    height: 19px;
+    background-image: url('./img/check-icon.svg');
+    background-repeat: no-repeat;
+}
+
+/*
+.header__list-item:before{
+	content: '\2713';
+	display: block;
+	width: 25px;
+	height: 19px;
+	color:white;
+	position: absolute;
+    margin-left: -26px;
+}
+*/
+
+.header-left {
+    margin: 50px;
+}
+
+.header-list {
+    margin: 18px 0 51px 45px;
+    padding: 0;
+    list-style: none;
+}
+
+.header-img {
+    position: relative;
+    background-color: #ffffff;
+    width: 469px;
+    height: 214px;
+    margin: 50px;
+    left: 144px;
+}
+
+/*Article - About your product*/
+
+.article {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.article-wrapper {
+
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    color: #445162;
+    position: relative;
+    margin: 50px;
+}
+
+.article-h {
+    font-size: 30px;
+    text-align: left;
+}
+
+.article-wrapper p {
+    color: #333333;
+    font-size: 16px;
+    width: 649px;
+}
+
+.article-video {
+    background-color: #445161;
+    width: 430px;
+    height: 245px;
+    margin: 50px;
+}
+
+/*Section - Dignity and plueses product*/
+.section-pluses {
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1280px;
+
+}
+
+.section-pluses-h {
+    color: #445161;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 36px;
+}
+
+.section-wrapper {
+    width: 40%;
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:before {
+    content: "+";
+    width: 32px;
+	height:	32px;
+	color: #fff;
+	font-weight: bold;
+	float: left; 
+    background-color: #445161;
+    font-size: 30px;
+	margin: 5px 10px 0 0;
+	padding: 5px;
+    text-align: center;
+}
+
+details[open] summary:before {
+    content: "-";
+}
+
+:focus {
+	outline: 0;
+}
+
+/*Section - Scrinshots*/
+.screenshots {
+	width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.screenshots-title {
+	width: 100%;
+	margin: 50px 0 35px 0;
+	text-align: center;
+	color:  #445161;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.screenshots-preview {
+	width: 574px;
+	margin: 0 -50px 30px 0;
+	display: flex;
+    color:  #445161;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.screenshots-preview p {
+    margin: 0 auto;
+	color:  #333333;
+	font-size: 16px;
+	line-height: 24px;
+    width: 359px;
+    padding-top: 5px;
+}
+
+.screenshots-preview img {
+	background-color:  #445161;
+	width: 200px;
+	height: 150px;
+	margin: 0 15px 0 0;
+}
+
+/*Section - Reviews*/
+.reviews {
+	width: 1280px;
+	margin: 0 auto;
+    background-color: #f5f5f5;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.reviews-title {
+	width: 100%;
+	margin: 50px 0 35px 0;
+	text-align: center;
+	color:  #445161;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.reviews-preview {
+    width: 450px;
+    display: flex;
+    background-color: #ececec;
+    margin: 0 0 20px 0;
+    border-radius: 5%;
+}
+.reviews-preview:before {
+	content: "";
+	border: 20px solid transparent;	
+	border-right: 20px solid #ececec;
+	position: absolute;
+	top: 29%;
+	left:20px;
+}
+
+.reviews img{
+	border-radius: 50%;
+	background-color:  #445161;
+	width: 75px;
+	height: 75px;
+	margin: 25px 5px 0 50px; 
+}
+
+.reviews-preview-txt{
+    width: 436px;
+    margin-top: 16px;
+    margin-left: 17px;
+    color:  #333333;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 18px;
+	text-align: left;
+}
+
+.reviews-preview-span{
+    width: 67px;
+    color:  #989898;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: left;
+    margin-top: 95px;
+    margin-left: 0px;
+    font-style: normal;
+}
+/*Article - Buy it now*/
+
+.article-buy{
+	width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top:50px;
+}
+.article-buy-h{
+	font-family: Arial;
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+.article-buy-wrapper{
+	flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    color: #445162;
+    position: relative;
+    margin: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.buy-100{
+  width: 300px;
+  background-color: #445162;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  border-radius:5px;
+}
+
+.buy-100-span {
+  width: 300px;
+  background-color: #ffffff;
+  color: #445162;
+  font-size: 40px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 18px 0 18px;
+}
+
+.buy-100-ol{
+  width: 242px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.knopka {
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 260px;
+  color: #445161;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center; 
+  padding: 5px; 
+  margin: 20px;
+  border-radius: 5px;
+} 
+.knopka:hover { 
+	background: #gray; 
+}
+
+/*Fotter - Contacts*/
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1280px;
+  /* height: 509px; */
+  padding: 50px;
+  background-color: #445161;
+}
+
+.main-footer_title {
+  display: block;
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-family: Arial;
+  color:  #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.main-footer_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  margin: 0 46px 0 0;
+}
+
+.main-footer_form input[type="text"],
+.main-footer_form input[type="email"],
+.main-footer_form textarea {
+  width: 100%;
+  height: 40px;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color:  #ffffff;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.main-footer_form input[type="text"]:hover,
+.main-footer_form input[type="email"]:hover,
+.main-footer_form textarea:hover {
+  background-color: gray;
+  color: white;
+  border-color: white;
+}
+
+.main-footer_form input[type="text"]:hover::placeholder,
+.main-footer_form input[type="email"]:hover::placeholder,
+.main-footer_form textarea:hover::placeholder {
+  color: white;
+}
+
+.main-footer_form textarea {
+  width: 500px;
+  height: 170px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color:  #ffffff;
+  outline: none;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  text-overflow:ellipsis;
+  font-family: Arial;
+  color:  #445162;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}  
+
+/* ----Стилизация placeholder c префиксами---*/
+/* input::-moz-placeholder
+input:-moz-placeholder 
+input:-ms-input-placeholder  */
+/* ----------------------------------------- */
+
+
+.main-footer_form input[type="submit"] {
+  border-radius: 5px;
+  background-color:  #ffffff;
+  width: 140px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: Arial;
+  color:  #445162;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  outline: none;
+}
+
+.main-footer_form input[type="submit"]:hover {
+  background-color: gray;
+  color: white;
+}
+
+.main-footer_form input[type="submit"]:active {
+  background-color:  #ffffff;
+  color:  #445162;
+}
+
+.main-footer_contacts {
+  width: 240px;
+  height: 300px;
+  background-color: white;
+}
+
+
+
